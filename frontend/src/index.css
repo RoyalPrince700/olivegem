@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light;
@@ -27,7 +27,12 @@ body {
   }
 }
 
-/* Custom Selection */
-::selection {
-  @apply bg-og-gold text-og-dark;
+@layer utilities {
+  @keyframes subtle-zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+  }
+  .animate-subtle-zoom {
+    animation: subtle-zoom 20s infinite alternate ease-in-out;
+  }
 }

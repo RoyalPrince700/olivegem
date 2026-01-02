@@ -2,16 +2,15 @@ import React from 'react';
 import { Globe, MapPin, CheckCircle } from 'lucide-react';
 
 const GlobalPresence = () => {
-  const countries = [
-    'Tanzania', 'Cameroon', 'Brazil', 'Tunisia', 'Burkina Faso',
-    'Pakistan', 'Russia', 'Ghana', 'Ivory Coast', 'France',
-    'Thailand', 'India', 'Turkey', 'Greece', 'Egypt'
+  const continents = [
+    'Africa', 'Asia', 'Europe', 'North America', 'South America',
+    'Antarctica', 'Oceania'
   ];
 
   return (
     <div className="min-h-screen bg-white overflow-hidden">
       {/* Hero */}
-      <section className="relative h-[60vh] flex items-center bg-og-dark">
+      <section className="relative h-[70vh] flex items-center bg-og-dark pt-20">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000" className="w-full h-full object-cover opacity-30" alt="Global Network" />
           <div className="absolute inset-0 bg-gradient-to-r from-og-dark via-og-dark/50 to-transparent"></div>
@@ -33,17 +32,17 @@ const GlobalPresence = () => {
             <div>
               <div className="mb-12">
                 <span className="text-og-green font-bold uppercase tracking-[0.3em] text-xs">Our Network</span>
-                <h2 className="text-4xl md:text-5xl font-bold text-og-dark mt-4 mb-6">Partner Countries</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-og-dark mt-4 mb-6">Continents</h2>
                 <div className="w-24 h-2 bg-og-green mb-8"></div>
                 <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
-                  We have established robust strategic partnerships and operational capabilities in over 15 countries, ensuring seamless supply chain management across borders.
+                  We have established robust strategic partnerships and operational capabilities across all continents, ensuring seamless supply chain management across borders.
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {countries.map((country) => (
-                  <div key={country} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-og-green/5 transition-colors group">
+                {continents.map((continent) => (
+                  <div key={continent} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-og-green/5 transition-colors group">
                     <MapPin className="text-og-green group-hover:scale-110 transition-transform" size={18} />
-                    <span className="font-bold text-og-dark tracking-wide">{country}</span>
+                    <span className="font-bold text-og-dark tracking-wide">{continent}</span>
                   </div>
                 ))}
               </div>
@@ -79,8 +78,8 @@ const GlobalPresence = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div>
-              <div className="text-6xl font-black text-og-gold mb-2">15+</div>
-              <p className="text-gray-400 font-bold uppercase tracking-widest text-sm">Partner Countries</p>
+              <div className="text-6xl font-black text-og-gold mb-2">7</div>
+              <p className="text-gray-400 font-bold uppercase tracking-widest text-sm">Continents</p>
             </div>
             <div>
               <div className="text-6xl font-black text-og-gold mb-2">40+</div>

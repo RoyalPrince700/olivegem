@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="bg-og-dark py-20 relative overflow-hidden">
+      <section className="bg-og-dark pt-40 pb-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-og-green/10 -skew-x-[45deg] translate-x-1/2"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 uppercase tracking-tighter">Get In <span className="text-og-gold italic">Touch</span></h1>
@@ -39,19 +39,6 @@ const Contact = () => {
                   </div>
                 </div>
               ))}
-              <div className="bg-og-dark text-white p-8 rounded-3xl relative overflow-hidden">
-                <div className="relative z-10">
-                  <h3 className="text-xl font-bold mb-4 uppercase tracking-widest text-og-gold flex items-center gap-2">
-                    <FileText size={20} />
-                    Registration
-                  </h3>
-                  <p className="text-gray-400 text-sm mb-2 font-bold uppercase tracking-widest">Business Reg Number:</p>
-                  <p className="text-3xl font-black text-white">3501007</p>
-                </div>
-                <div className="absolute -bottom-4 -right-4 opacity-5">
-                   <FileText size={120} />
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}

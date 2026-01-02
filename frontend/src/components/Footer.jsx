@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Instagram, Phone, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/oggclogo.png';
 
 const Footer = () => {
   return (
@@ -9,9 +10,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Info */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-og-green rounded-lg flex items-center justify-center text-white font-bold italic">OG</div>
-              <h2 className="text-2xl font-black uppercase tracking-tighter">Olive Gem</h2>
+            <div className="flex items-center">
+              <img 
+                src={logo} 
+                alt="Olive Gem Logo" 
+                className="h-14 w-auto object-contain"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Delivering unexploited value to the Oil and Gas and Agriculture industries through innovation and operational excellence.
@@ -54,14 +58,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <h4 className="font-bold mb-8 uppercase text-xs tracking-[0.2em] text-og-gold">Office Info</h4>
-          <div className="space-y-4 text-sm text-gray-400">
-            <p>Business Registration No:</p>
-            <p className="text-white font-bold text-lg">3501007</p>
-            <p className="pt-4 italic text-[10px] uppercase tracking-widest font-bold">Nigeria • Global</p>
-          </div>
-        </div>
+      
         </div>
 
         <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">

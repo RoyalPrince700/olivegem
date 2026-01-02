@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center overflow-hidden bg-og-dark">
+      <section className="relative h-[500px] flex items-center justify-center overflow-hidden bg-og-dark pt-20">
         <div className="absolute inset-0 opacity-40">
           <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000" alt="Corporate" className="w-full h-full object-cover" />
         </div>
@@ -25,9 +25,9 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <span className="bg-og-green/10 text-og-green text-xs font-black uppercase px-4 py-2 rounded-full tracking-widest">Company Overview</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-og-dark leading-tight">Olive Gem Global Company</h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                Olive Gem Global Company is a privately owned corporation that renders procurement services in the oil and gas, Agriculture industry, and General contract.
+              <h2 className="text-4xl md:text-5xl font-bold text-og-dark leading-tight">Olive Gem Global Company (Ltd)</h2>
+              <p className="text-2xl text-gray-600 font-bold leading-relaxed">
+                OGGC Limited is a privately owned corporation that renders procurement services in the oil and gas, Agriculture industry, and General contract.
               </p>
               <div className="bg-og-green text-white p-8 rounded-2xl relative overflow-hidden group shadow-2xl">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-125 transition-transform">

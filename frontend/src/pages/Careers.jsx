@@ -12,7 +12,7 @@ const Careers = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="relative h-[60vh] flex items-center bg-og-dark">
+      <section className="relative h-[70vh] flex items-center bg-og-dark pt-20">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=2000" className="w-full h-full object-cover opacity-30" alt="Team working" />
           <div className="absolute inset-0 bg-gradient-to-r from-og-dark via-og-dark/40 to-transparent"></div>

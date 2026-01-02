@@ -1,32 +1,45 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Droplet, Factory, Wheat, Package, Ship, Truck } from 'lucide-react';
+
+// Asset Imports
+import fertilizerImg from '../assets/fertilizer.jpg';
+import crudePalmOilImg from '../assets/crudepalmoil.jpg';
+import maizeImg from '../assets/maize.jpg';
+import riceImg from '../assets/rice.jpg';
+import sugarImg from '../assets/sugar.jpg';
+import dieselImg from '../assets/diesel.jpg';
+import jetFuelImg from '../assets/jetfuel.jpg';
+import crudeOilImg from '../assets/crudeoil.jpg';
+import naturalGasImg from '../assets/naturalgas.jpg';
+import pmsImg from '../assets/Premium Motor Spirit.jpg';
 
 const Products = () => {
   const agroProducts = [
-    { name: 'Fertilizers', img: 'https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&q=80&w=600' },
-    { name: 'Crude Palm Oil', img: 'https://images.unsplash.com/photo-1622213199650-7f287870371a?auto=format&fit=crop&q=80&w=600' },
-    { name: 'Maize', img: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&q=80&w=600' },
-    { name: 'Rice', img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=600' },
-    { name: 'Sugar', img: 'https://images.unsplash.com/photo-1581448670546-d4469276d15a?auto=format&fit=crop&q=80&w=600' },
+    { name: 'Fertilizers', img: fertilizerImg },
+    { name: 'Crude Palm Oil', img: crudePalmOilImg },
+    { name: 'Maize', img: maizeImg },
+    { name: 'Rice', img: riceImg },
+    { name: 'Sugar', img: sugarImg },
   ];
 
   const oilProducts = [
-    { name: 'Diesel', img: 'https://images.unsplash.com/photo-1563770660941-20978e870813?auto=format&fit=crop&q=80&w=600' },
-    { name: 'Jet fuel', img: 'https://images.unsplash.com/photo-1559297434-2d8a134e0428?auto=format&fit=crop&q=80&w=600' },
-    { name: 'Crude Oil', img: 'https://images.unsplash.com/photo-1544115089-577a1974435f?auto=format&fit=crop&q=80&w=600' },
-    { name: 'Liquified Natural Gas', img: 'https://images.unsplash.com/photo-1544158428-197e44a4f783?auto=format&fit=crop&q=80&w=600' },
-    { name: 'Premium Motor Spirit', img: 'https://images.unsplash.com/photo-1584126154316-5660b64d06a9?auto=format&fit=crop&q=80&w=600' },
+    { name: 'Diesel', img: dieselImg },
+    { name: 'Jet fuel', img: jetFuelImg },
+    { name: 'Crude Oil', img: crudeOilImg },
+    { name: 'Liquified Natural Gas', img: naturalGasImg },
+    { name: 'Premium Motor Spirit', img: pmsImg },
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-og-dark py-20">
+      <section className="bg-og-dark pt-40 pb-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 uppercase tracking-tighter">Products & Services</h1>
             <p className="text-xl text-gray-400 border-l-4 border-og-green pl-6 py-2">
-              Comprehensive procurement solutions across the energy and agricultural supply chains.
+              Comprehensive procurement solutions across the energy and commodity supply chains.
             </p>
           </div>
         </div>
@@ -48,7 +61,14 @@ const Products = () => {
             {agroProducts.map((p, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="relative h-64 rounded-2xl overflow-hidden mb-4 bg-gray-200">
-                  <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img 
+                    src={p.img} 
+                    alt={p.name} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    onError={(e) => {
+                      e.target.src = 'https://images.unsplash.com/photo-1581448670546-d4469276d15a?auto=format&fit=crop&q=80&w=800'; // Fallback to a generic industrial image
+                    }}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-og-dark/80 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-6">
                     <h3 className="text-white font-bold uppercase tracking-widest text-sm">{p.name}</h3>
@@ -76,7 +96,14 @@ const Products = () => {
             {oilProducts.map((p, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="relative h-64 rounded-2xl overflow-hidden mb-4 bg-gray-200">
-                  <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img 
+                    src={p.img} 
+                    alt={p.name} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    onError={(e) => {
+                      e.target.src = 'https://images.unsplash.com/photo-1581448670546-d4469276d15a?auto=format&fit=crop&q=80&w=800'; // Fallback to a generic industrial image
+                    }}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-og-dark/80 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-6">
                     <h3 className="text-white font-bold uppercase tracking-widest text-sm">{p.name}</h3>
@@ -95,9 +122,12 @@ const Products = () => {
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-12 font-medium">
             Our expert team is ready to help you navigate the complexities of global trade and supply chain management.
           </p>
-          <button className="bg-white text-og-green px-12 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-og-gold hover:text-white transition-all shadow-2xl">
+          <Link 
+            to="/contact" 
+            className="inline-block bg-white text-og-green px-12 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-og-gold hover:text-white transition-all shadow-2xl"
+          >
             Contact Our Sales Team
-          </button>
+          </Link>
         </div>
       </section>
     </div>
