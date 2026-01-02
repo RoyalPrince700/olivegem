@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Careers from './pages/Careers';
 import ESG from './pages/ESG';
 import Media from './pages/Media';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/esg" element={<ESG />} />
             <Route path="/media" element={<Media />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />

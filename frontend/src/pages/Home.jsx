@@ -245,7 +245,7 @@ const ValueProps = () => (
             </div>
             <h2 className="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter leading-[0.9]">
               UNLEASHING <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-og-gold to-og-green italic">POTENTIAL</span>
+              <span className="text-white italic">POTENTIAL</span>
             </h2>
             <p className="text-xl text-gray-400 leading-relaxed font-light max-w-xl">
               Olive Gem is a privately owned corporation dedicated to rendering premier procurement services, meeting both local and international energy demands with safety, efficiency, and scale.
@@ -270,29 +270,29 @@ const Home = () => {
       <Operations />
       <ValueProps />
       {/* Global Connectivity CTA */}
-      <section className="py-48 bg-og-dark text-white relative overflow-hidden group">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10 scale-100 group-hover:scale-110 transition-transform duration-[20s]" 
+      <section className="py-24 md:py-48 bg-og-dark text-white relative overflow-hidden group">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10 scale-100 group-hover:scale-110 transition-transform duration-[20s]"
           style={{ backgroundImage: `url(${oilAndGasImg})` }}
         />
-        
+
         <div className="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none">
           <Globe className="w-full h-full scale-150 -mr-32 text-og-gold animate-[subtle-zoom_30s_infinite_linear]" />
         </div>
 
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <div className="inline-block px-4 py-2 rounded-full border border-og-gold/20 text-og-gold text-[10px] font-black uppercase tracking-[0.5em] mb-12">
+          <div className="inline-block px-4 py-2 rounded-full border border-og-gold/20 text-og-gold text-[10px] font-black uppercase tracking-[0.5em] mb-8 md:mb-12">
             Our Network
           </div>
-          <h2 className="text-7xl md:text-9xl font-black mb-12 uppercase tracking-tighter leading-none">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-black mb-8 md:mb-12 uppercase tracking-tighter leading-none">
             STRATEGIC <br />
             <span className="text-og-green italic">CONNECTIVITY</span>
           </h2>
-          <p className="text-2xl text-gray-400 max-w-2xl mx-auto mb-16 font-light leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-12 md:mb-16 font-light leading-relaxed px-4">
             Operating across <span className="text-white font-bold">15+ countries</span>, we maintain a localized presence in the world's most critical energy hubs, ensuring reliability where it matters most.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-            <Link to="/global-presence" className="bg-og-gold text-og-dark px-16 py-6 rounded-sm font-black uppercase tracking-widest text-sm hover:bg-white transition-all shadow-2xl hover:shadow-og-gold/20 active:scale-95">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8">
+            <Link to="/global-presence" className="bg-og-gold text-og-dark px-8 sm:px-12 md:px-16 py-4 md:py-6 rounded-sm font-black uppercase tracking-widest text-xs md:text-sm hover:bg-white transition-all shadow-2xl hover:shadow-og-gold/20 active:scale-95 w-full sm:w-auto text-center">
               Explore Our Footprint
             </Link>
             <Link to="/contact" className="text-white border-b-2 border-white/20 hover:border-og-green font-black uppercase tracking-[0.3em] text-[10px] py-2 transition-all">

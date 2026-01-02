@@ -27,7 +27,7 @@ const About = () => {
               <span className="bg-og-green/10 text-og-green text-xs font-black uppercase px-4 py-2 rounded-full tracking-widest">Company Overview</span>
               <h2 className="text-4xl md:text-5xl font-bold text-og-dark leading-tight">Olive Gem Global Company (Ltd)</h2>
               <p className="text-2xl text-gray-600 font-bold leading-relaxed">
-                OGGC Limited Olive Gem Global Company Ltd, is a distinguished private corporation specializing in comprehensive procurement services within the dynamic sectors of oil and gas, agriculture and mining.
+                OGGC Limited, is a distinguished private corporation specializing in comprehensive procurement services within the dynamic sectors of oil and gas, agriculture and mining.
               </p>
               <div className="bg-og-green text-white p-8 rounded-2xl relative overflow-hidden group shadow-2xl">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-125 transition-transform">
