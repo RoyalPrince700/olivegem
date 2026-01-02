@@ -93,9 +93,13 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <button className="bg-og-green text-white font-bold uppercase tracking-wider py-3 rounded-xl mt-2">
-                Get Started
-              </button>
+              <Link
+                to="/contact"
+                onClick={() => setIsOpen(false)}
+                className="bg-og-green text-white font-bold uppercase tracking-wider py-3 rounded-xl mt-2 text-center hover:bg-og-gold transition-all"
+              >
+                Connect
+              </Link>
             </div>
           )}
         </div>

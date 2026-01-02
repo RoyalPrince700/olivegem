@@ -27,7 +27,7 @@ const About = () => {
               <span className="bg-og-green/10 text-og-green text-xs font-black uppercase px-4 py-2 rounded-full tracking-widest">Company Overview</span>
               <h2 className="text-4xl md:text-5xl font-bold text-og-dark leading-tight">Olive Gem Global Company (Ltd)</h2>
               <p className="text-2xl text-gray-600 font-bold leading-relaxed">
-                OGGC Limited is a privately owned corporation that renders procurement services in the oil and gas, Agriculture industry, and General contract.
+                OGGC Limited Olive Gem Global Company Ltd, is a distinguished private corporation specializing in comprehensive procurement services within the dynamic sectors of oil and gas, agriculture and mining.
               </p>
               <div className="bg-og-green text-white p-8 rounded-2xl relative overflow-hidden group shadow-2xl">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-125 transition-transform">
@@ -58,7 +58,7 @@ const About = () => {
                   <h3 className="text-3xl font-bold uppercase tracking-tight text-og-dark">Mission</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  We add unexploited value to the Oil and Gas, Agriculture industry to meet local and international demands.
+                  Our mission is to create untapped value in the Oil and Gas, Agriculture, and Mining sectors, addressing both local and international needs. Through innovative approaches and strategic partnerships, we aim to drive growth while responsibly meeting the demands of these vital industries.
                 </p>
               </div>
               {/* Vision */}
@@ -68,10 +68,26 @@ const About = () => {
                   <h3 className="text-3xl font-bold uppercase tracking-tight text-og-dark">Vision</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  To be a world-class private company through superior operating and excellent executions.
+                  Our vision is to become a world-class private company by excelling in operations and executions. We aspire to be a global leader, delivering superior performance and unmatched competitiveness in our industry. Through relentless dedication to excellence, we aim to set new standards and drive sustainable growth for our stakeholders.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <span className="bg-og-green/10 text-og-green text-xs font-black uppercase px-4 py-2 rounded-full tracking-widest">Why Choose Us</span>
+            <h2 className="text-4xl md:text-6xl font-bold text-og-dark mt-6 mb-8 uppercase tracking-tight">Why Choose Us?</h2>
+            <div className="w-24 h-2 bg-og-gold mx-auto mb-12 rounded-full"></div>
+          </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-medium">
+              We are committed to excellence, integrity and tailored solutions as we meticulously craft strategies in procurement for the oil and gas, agriculture and mining industries specifically designed to meet the needs of clients.
+            </p>
           </div>
         </div>
       </section>

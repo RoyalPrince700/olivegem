@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-og-dark text-white pt-20 pb-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {/* Brand Info */}
           <div className="space-y-6">
             <div className="flex items-center">
@@ -31,7 +31,7 @@ const Footer = () => {
           <h4 className="font-bold mb-8 uppercase text-xs tracking-[0.2em] text-og-gold">Company</h4>
           <ul className="space-y-4 text-sm text-gray-400 font-medium">
             <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
-            <li><Link to="/careers" className="hover:text-white transition-colors">Careers</Link></li>
+            {/* <li><Link to="/careers" className="hover:text-white transition-colors">Careers</Link></li> */}
             <li><Link to="/esg" className="hover:text-white transition-colors">ESG</Link></li>
             <li><Link to="/esg#ethics" className="hover:text-white transition-colors">Ethics & Compliance</Link></li>
             <li><Link to="/global-presence" className="hover:text-white transition-colors">Global Presence</Link></li>
@@ -48,7 +48,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        {/* <div>
           <h4 className="font-bold mb-8 uppercase text-xs tracking-[0.2em] text-og-gold">Media</h4>
           <ul className="space-y-4 text-sm text-gray-400 font-medium">
             <li><Link to="/media" className="hover:text-white transition-colors">Latest News</Link></li>
@@ -56,7 +56,7 @@ const Footer = () => {
             <li><Link to="/media" className="hover:text-white transition-colors">Film & Media</Link></li>
             <li><Link to="/contact" className="hover:text-white transition-colors">Contact Media</Link></li>
           </ul>
-        </div>
+        </div> */}
 
       
         </div>

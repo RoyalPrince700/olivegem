@@ -51,9 +51,9 @@ const Media = () => {
       {/* Main Content Grid */}
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-16">
             {/* Sidebar Filters */}
-            <div className="lg:col-span-1 space-y-10">
+            <div className="lg:col-span-1 space-y-10 lg:sticky lg:top-8 lg:self-start">
               <div className="space-y-4">
                 <h3 className="text-xs font-black uppercase tracking-widest text-og-dark border-b-2 border-og-green pb-2">Filter By Category</h3>
                 <ul className="space-y-3 text-sm font-bold text-gray-500">
@@ -74,27 +74,29 @@ const Media = () => {
 
             {/* News Feed */}
             <div className="lg:col-span-3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {news.map((item, i) => (
-                  <div key={i} className="group cursor-pointer">
+                  <div key={i} className="group cursor-pointer flex flex-col h-full">
                     <div className="relative h-64 rounded-[32px] overflow-hidden mb-6">
                       <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                       <div className="absolute top-4 left-4 bg-og-green text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">{item.category}</div>
                     </div>
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
-                        <span className="flex items-center gap-1"><Calendar size={12}/> {item.date}</span>
+                    <div className="space-y-4 flex flex-col justify-between h-full">
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                          <span className="flex items-center gap-1"><Calendar size={12}/> {item.date}</span>
+                        </div>
+                        <h3 className="text-2xl font-bold text-og-dark group-hover:text-og-green transition-colors leading-tight">{item.title}</h3>
                       </div>
-                      <h3 className="text-2xl font-bold text-og-dark group-hover:text-og-green transition-colors leading-tight">{item.title}</h3>
-                      <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-og-gold group-hover:text-og-dark transition-all">
+                      <button className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-og-gold group-hover:text-og-dark transition-all mt-auto w-fit">
                         Read Story <ChevronRight size={12} />
                       </button>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className="mt-16 pt-8 border-t border-gray-100 flex justify-center">
-                <button className="bg-og-dark text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-og-green transition-all shadow-xl">
+              <div className="mt-20 pt-12 border-t border-gray-100 flex justify-center">
+                <button className="bg-og-dark text-white px-12 py-5 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-og-green transition-all shadow-xl hover:shadow-og-green/20">
                   Load More Stories
                 </button>
               </div>
