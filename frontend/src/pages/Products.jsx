@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Droplet, Factory, Wheat, Package, Ship, Truck } from 'lucide-react';
+import { Droplet, Factory, Wheat, Package, Ship, Truck, Gem } from 'lucide-react';
 
 // Asset Imports
 import fertilizerImg from '../assets/fertilizer.jpg';
@@ -13,6 +13,15 @@ import jetFuelImg from '../assets/jetfuel.jpg';
 import crudeOilImg from '../assets/crudeoil.jpg';
 import naturalGasImg from '../assets/naturalgas.jpg';
 import pmsImg from '../assets/Premium Motor Spirit.jpg';
+import cngImg from '../assets/cng.jpeg';
+import goldImg from '../assets/gold.jpg';
+import tinOreImg from '../assets/tinore.jpg';
+import ironOreImg from '../assets/ironore.jpg';
+import gemStonesImg from '../assets/gemstone.jpg';
+import barleyMaltImg from '../assets/baleymalt.jpg';
+import wheatFlourImg from '../assets/wheatflour.jpg';
+import wheatImg from '../assets/wheat.jpg';
+import crudeSoyaOilImg from '../assets/crudesoya.jpg';
 
 const Products = () => {
   const agroProducts = [
@@ -21,14 +30,27 @@ const Products = () => {
     { name: 'Maize', img: maizeImg },
     { name: 'Rice', img: riceImg },
     { name: 'Sugar', img: sugarImg },
+    { name: 'Barley Malt', img: barleyMaltImg },
+    { name: 'Wheat flour', img: wheatFlourImg },
+    { name: 'Wheat', img: wheatImg },
+    { name: 'Crude soya oil', img: crudeSoyaOilImg },
   ];
 
   const oilProducts = [
-    { name: 'Diesel', img: dieselImg },
+    { name: 'EN590', img: dieselImg },
     { name: 'Jet fuel', img: jetFuelImg },
     { name: 'Crude Oil', img: crudeOilImg },
     { name: 'Liquified Natural Gas', img: naturalGasImg },
     { name: 'Premium Motor Spirit', img: pmsImg },
+    { name: 'Compressed Natural Gas Cylinders', img: cngImg },
+    { name: 'Compressed natural gas', img: naturalGasImg },
+  ];
+
+  const mineralsProducts = [
+    { name: 'Gold', img: goldImg },
+    { name: 'Tin ore', img: tinOreImg },
+    { name: 'Iron ore', img: ironOreImg },
+    { name: 'Gem Stones', img: gemStonesImg },
   ];
 
   return (
@@ -94,6 +116,41 @@ const Products = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {oilProducts.map((p, i) => (
+              <div key={i} className="group cursor-pointer">
+                <div className="relative h-64 rounded-2xl overflow-hidden mb-4 bg-gray-200">
+                  <img 
+                    src={p.img} 
+                    alt={p.name} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    onError={(e) => {
+                      e.target.src = 'https://images.unsplash.com/photo-1581448670546-d4469276d15a?auto=format&fit=crop&q=80&w=800'; // Fallback to a generic industrial image
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-og-dark/80 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <h3 className="text-white font-bold uppercase tracking-widest text-sm">{p.name}</h3>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Minerals */}
+      <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-3 mb-4">
+                <Gem className="text-og-green" size={24} />
+                <span className="text-og-green font-bold uppercase tracking-[0.3em] text-xs">Industry Segment</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-og-dark uppercase tracking-tight">Minerals</h2>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {mineralsProducts.map((p, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="relative h-64 rounded-2xl overflow-hidden mb-4 bg-gray-200">
                   <img 

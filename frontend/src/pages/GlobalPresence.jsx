@@ -82,11 +82,11 @@ const GlobalPresence = () => {
               <p className="text-gray-400 font-bold uppercase tracking-widest text-sm">Continents</p>
             </div>
             <div>
-              <div className="text-6xl font-black text-og-gold mb-2">40+</div>
+              <div className="text-6xl font-black text-og-gold mb-2">7+</div>
               <p className="text-gray-400 font-bold uppercase tracking-widest text-sm">Global Offices</p>
             </div>
             <div>
-              <div className="text-6xl font-black text-og-gold mb-2">60+</div>
+              <div className="text-6xl font-black text-og-gold mb-2">5+</div>
               <p className="text-gray-400 font-bold uppercase tracking-widest text-sm">Years Experience</p>
             </div>
           </div>

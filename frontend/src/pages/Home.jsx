@@ -39,7 +39,7 @@ const Hero = () => (
       <div className="max-w-5xl">
         <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-og-green/10 border border-og-green/20 text-og-light-green text-xs font-bold uppercase tracking-[0.2em] mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <span className="w-2 h-2 rounded-full bg-og-gold animate-pulse" />
-          Global Procurement Excellence
+          Global Trading  Excellence
         </div>
 
         <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-black text-white leading-[0.85] tracking-tighter mb-8 animate-in fade-in slide-in-from-left-8 duration-1000">
@@ -52,7 +52,7 @@ const Hero = () => (
         <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-16 mb-12 animate-in fade-in slide-in-from-left-12 duration-1000 delay-300">
           <div className="h-24 w-1 bg-gradient-to-b from-og-gold to-transparent hidden md:block" />
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl font-light leading-relaxed">
-            A premier procurement and energy services powerhouse, connecting the Oil & Gas, Agriculture, and Mining sectors with global markets through <span className="text-white font-medium italic underline decoration-og-gold/50 decoration-2 underline-offset-4">unmatched integrity.</span>
+          A premier energy and commodity trading service powerhouse, connecting the Oil & Gas, Agriculture, and Mining sectors with global markets through <span className="text-white font-medium italic underline decoration-og-gold/50 decoration-2 underline-offset-4">unmatched integrity.</span>
           </p>
         </div>
 
@@ -206,7 +206,7 @@ const ValueProps = () => (
             <div className="relative p-12 bg-og-green/90 h-full">
               <TrendingUp className="text-white mb-8 group-hover:scale-110 transition-transform" size={48} />
               <h4 className="text-xl font-black text-white uppercase tracking-tight mb-4">Performance</h4>
-              <p className="text-white/80 text-sm leading-relaxed">Driving efficiency and value through innovative procurement and logistics strategies.</p>
+              <p className="text-white/80 text-sm leading-relaxed">Driving efficiency and value through innovative trading and logistics strategies</p>
             </div>
           </div>
 
@@ -232,7 +232,7 @@ const ValueProps = () => (
             <div className="relative p-12 bg-white/95 h-full">
               <Factory className="text-og-dark mb-8 group-hover:scale-110 transition-transform" size={48} />
               <h4 className="text-xl font-black text-og-dark uppercase tracking-tight mb-4">Innovation</h4>
-              <p className="text-gray-600 text-sm leading-relaxed">Pioneering new methods in procurement to solve the world's most complex energy challenges.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">Pioneering new methods in trading to solve the world's most complex commodity challenges.</p>
             </div>
           </div>
         </div>
@@ -248,8 +248,7 @@ const ValueProps = () => (
               <span className="text-white italic">POTENTIAL</span>
             </h2>
             <p className="text-xl text-gray-400 leading-relaxed font-light max-w-xl">
-              Olive Gem is a privately owned corporation dedicated to rendering premier procurement services, meeting both local and international energy demands with safety, efficiency, and scale.
-            </p>
+            Olive Gem is a privately owned corporation dedicated to rendering premier trading services, meeting both local and international demands with safety, efficiency and scale.</p>
           </div>
           <div className="pt-8">
             <Link to="/about" className="group inline-flex items-center gap-6 bg-white text-og-dark px-12 py-6 rounded-sm font-black uppercase tracking-widest text-sm hover:bg-og-gold transition-all">
@@ -289,7 +288,7 @@ const Home = () => {
             <span className="text-og-green italic">CONNECTIVITY</span>
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-12 md:mb-16 font-light leading-relaxed px-4">
-            Operating across <span className="text-white font-bold">15+ countries</span>, we maintain a localized presence in the world's most critical energy hubs, ensuring reliability where it matters most.
+            Operating across <span className="text-white font-bold">15+ countries</span>, we maintain a localized presence in the world's most critical energy and commodity hubs, ensuring reliability where it matters most.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8">
             <Link to="/global-presence" className="bg-og-gold text-og-dark px-8 sm:px-12 md:px-16 py-4 md:py-6 rounded-sm font-black uppercase tracking-widest text-xs md:text-sm hover:bg-white transition-all shadow-2xl hover:shadow-og-gold/20 active:scale-95 w-full sm:w-auto text-center">
