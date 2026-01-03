@@ -87,6 +87,8 @@ const Products = () => {
                     src={p.img} 
                     alt={p.name} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                    fetchPriority="low"
                     onError={(e) => {
                       e.target.src = 'https://images.unsplash.com/photo-1581448670546-d4469276d15a?auto=format&fit=crop&q=80&w=800'; // Fallback to a generic industrial image
                     }}
@@ -122,6 +124,8 @@ const Products = () => {
                     src={p.img} 
                     alt={p.name} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                    fetchPriority="low"
                     onError={(e) => {
                       e.target.src = 'https://images.unsplash.com/photo-1581448670546-d4469276d15a?auto=format&fit=crop&q=80&w=800'; // Fallback to a generic industrial image
                     }}
@@ -157,6 +161,8 @@ const Products = () => {
                     src={p.img} 
                     alt={p.name} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                    fetchPriority="low"
                     onError={(e) => {
                       e.target.src = 'https://images.unsplash.com/photo-1581448670546-d4469276d15a?auto=format&fit=crop&q=80&w=800'; // Fallback to a generic industrial image
                     }}

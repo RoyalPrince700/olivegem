@@ -30,6 +30,8 @@ const Hero = () => (
         src={oilAndGasImg} 
         alt="Global Logistics and Procurement" 
         className="w-full h-full object-cover scale-100 animate-[subtle-zoom_20s_infinite_alternate]"
+        loading="eager"
+        fetchPriority="high"
       />
       {/* Decorative lines/patterns */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-og-green/5 skew-x-12 transform origin-top-right -z-0" />
@@ -99,7 +101,13 @@ const Hero = () => (
 
 const ServiceCard = ({ icon: Icon, title, image, link, description }) => (
   <Link to={link} className="group relative h-[500px] overflow-hidden rounded-sm cursor-pointer block shadow-2xl transition-all duration-700">
-    <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+    <img 
+      src={image} 
+      alt={title} 
+      className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+      loading="lazy"
+      fetchPriority="low"
+    />
     <div className="absolute inset-0 bg-gradient-to-t from-og-dark via-og-dark/40 to-transparent opacity-90 transition-opacity group-hover:opacity-100"></div>
     <div className="absolute bottom-0 left-0 p-10 text-white space-y-6 z-10">
       <div className="w-14 h-14 bg-og-green/90 backdrop-blur-md rounded-sm flex items-center justify-center group-hover:bg-og-gold transition-colors duration-500 shadow-xl">
@@ -189,6 +197,8 @@ const ValueProps = () => (
               src={logoImg} 
               className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" 
               alt="Integrity"
+              loading="lazy"
+              fetchPriority="low"
             />
             <div className="relative p-12 bg-og-dark/60 backdrop-blur-sm h-full">
               <ShieldCheck className="text-og-gold mb-8 group-hover:scale-110 transition-transform" size={48} />
@@ -202,6 +212,8 @@ const ValueProps = () => (
               src={oilAndGasImg} 
               className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" 
               alt="Performance"
+              loading="lazy"
+              fetchPriority="low"
             />
             <div className="relative p-12 bg-og-green/90 h-full">
               <TrendingUp className="text-white mb-8 group-hover:scale-110 transition-transform" size={48} />
@@ -215,6 +227,8 @@ const ValueProps = () => (
               src={agricultureImg} 
               className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" 
               alt="Network"
+              loading="lazy"
+              fetchPriority="low"
             />
             <div className="relative p-12 bg-og-dark/60 backdrop-blur-sm h-full">
               <Globe className="text-og-green mb-8 group-hover:scale-110 transition-transform" size={48} />
@@ -228,6 +242,8 @@ const ValueProps = () => (
               src={miningImg} 
               className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" 
               alt="Innovation"
+              loading="lazy"
+              fetchPriority="low"
             />
             <div className="relative p-12 bg-white/95 h-full">
               <Factory className="text-og-dark mb-8 group-hover:scale-110 transition-transform" size={48} />

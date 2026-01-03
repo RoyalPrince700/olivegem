@@ -39,6 +39,10 @@ const Navbar = () => {
                 src={logo} 
                 alt="Olive Gem Logo" 
                 className={`transition-all duration-500 ${isScrolled ? 'h-10' : 'h-12'} w-auto object-contain group-hover:scale-105`}
+                loading="eager"
+                fetchPriority="high"
+                width="120"
+                height="48"
               />
             </Link>
 
