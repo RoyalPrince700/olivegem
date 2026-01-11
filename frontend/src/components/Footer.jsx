@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Instagram, Phone, ChevronRight } from 'lucide-react';
+import { Mail, Instagram, Phone, ChevronRight, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/oggclogo.png';
 
@@ -21,6 +21,7 @@ const Footer = () => {
               Delivering unexploited value to the Oil and Gas and Agriculture industries through innovation and operational excellence.
             </p>
             <div className="flex gap-4">
+              <a href="https://www.linkedin.com/company/oggc" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-og-green transition-all"><Linkedin size={18}/></a>
               <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-og-green transition-all"><Instagram size={18}/></a>
               <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-og-green transition-all"><Mail size={18}/></a>
               <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-og-green transition-all"><Phone size={18}/></a>

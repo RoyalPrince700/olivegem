@@ -1,11 +1,12 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, FileText, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, FileText, Send, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
     { icon: Phone, title: 'Call Us', details: ['+234 806 125 1833', '+234 915 274 3011'], color: 'text-og-green' },
-    { icon: Mail, title: 'Email Us', details: ['ogcinfo21@gmail.com', 'gemsfoodbr@gmail.com'], color: 'text-og-gold' },
+    { icon: Mail, title: 'Email Us', details: ['info@oggcltd.com'], color: 'text-og-gold' },
     { icon: Instagram, title: 'Instagram', details: ['@olivegemglobal_ng'], color: 'text-pink-500' },
+    { icon: Linkedin, title: 'LinkedIn', details: ['Olive Gem Global Company Limited'], color: 'text-blue-600', link: 'https://www.linkedin.com/company/oggc' },
   ];
 
   return (
@@ -34,7 +35,20 @@ const Contact = () => {
                   <h3 className="text-xl font-bold text-og-dark mb-4 uppercase tracking-tight">{item.title}</h3>
                   <div className="space-y-2">
                     {item.details.map((detail, idx) => (
-                      <p key={idx} className="text-gray-600 font-medium">{detail}</p>
+                      <div key={idx}>
+                        {item.link ? (
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 font-medium hover:text-og-green transition-colors"
+                          >
+                            {detail}
+                          </a>
+                        ) : (
+                          <p className="text-gray-600 font-medium">{detail}</p>
+                        )}
+                      </div>
                     ))}
                   </div>
                 </div>

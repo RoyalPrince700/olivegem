@@ -1,5 +1,7 @@
 import React from 'react';
 import { Target, Eye, ShieldCheck, Zap, Award, Users, Lightbulb, TrendingUp } from 'lucide-react';
+import OptimizedImage from '../components/OptimizedImage';
+import founderImage from '../assets/oggcltdfounder.jpeg';
 
 const About = () => {
   const values = [
@@ -70,6 +72,41 @@ const About = () => {
                 <p className="text-gray-600 text-lg leading-relaxed">
                   Our vision is to become a world-class private company by excelling in operations and executions. We aspire to be a global leader, delivering superior performance and unmatched competitiveness in our industry. Through relentless dedication to excellence, we aim to set new standards and drive sustainable growth for our stakeholders.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="bg-white p-8 rounded-2xl shadow-xl">
+                  <h3 className="text-3xl font-bold text-og-dark mb-6 uppercase tracking-tight">Our Founder</h3>
+                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                    Olive Gem Global Company Ltd was founded to bridge opportunities across the energy and commodities value chain. Our focus is on responsible trading, strategic partnerships, and delivering value through disciplined execution.
+                  </p>
+                  <div className="border-l-4 border-og-gold pl-6">
+                    <p className="text-2xl font-bold text-og-dark">Salami Kafayat Omobolanle</p>
+                    <p className="text-og-green font-semibold uppercase tracking-widest text-sm">Founder</p>
+                  </div>
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <div className="bg-og-gold/10 p-4 rounded-3xl">
+                    <OptimizedImage
+                      src={founderImage}
+                      alt="Salami Kafayat Omobolanle, Founder of Olive Gem Global Company Ltd"
+                      className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                      eager={true}
+                      fetchPriority="high"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

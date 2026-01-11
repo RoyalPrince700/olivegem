@@ -210,7 +210,7 @@ const PrivacyPolicy = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Mail className="text-og-green" size={20} />
-                    <span className="text-gray-600">privacy@olivegemglobal.com</span>
+                    <span className="text-gray-600">info@oggcltd.com</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Shield className="text-og-green" size={20} />
