@@ -2,6 +2,7 @@ import React from 'react';
 import { Target, Eye, ShieldCheck, Zap, Award, Users, Lightbulb, TrendingUp } from 'lucide-react';
 import OptimizedImage from '../components/OptimizedImage';
 import founderImage from '../assets/oggcltdfounder.jpeg';
+import oilAboutUsImg from '../assets/oilaboutus.jpeg';
 
 const About = () => {
   const values = [
@@ -11,9 +12,9 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[500px] flex items-center justify-center overflow-hidden bg-og-dark pt-20">
+      <section className="relative h-[700px] flex items-center justify-center overflow-hidden bg-og-dark pt-20">
         <div className="absolute inset-0 opacity-40">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000" alt="Corporate" className="w-full h-full object-cover" />
+          <img src={oilAboutUsImg} alt="Oil and Gas Operations" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 uppercase tracking-tighter">About Us</h1>
@@ -135,7 +136,7 @@ const About = () => {
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-og-dark mb-4">Core Values</h2>
             <div className="w-20 h-1.5 bg-og-green mx-auto mb-6"></div>
-            <p className="text-gray-500 max-w-2xl mx-auto uppercase tracking-widest text-sm font-bold">The foundation of our corporate culture</p>
+            <p className="text-gray-500 max-w-2xl mx-auto uppercase tracking-widest text-sm font-bold">Excellence, Integrity and sustainability are the foundation of our corporate culture</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((v, i) => (

@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Instagram, FileText, Send, Linkedin } from 'lucide
 
 const Contact = () => {
   const contactInfo = [
-    { icon: Phone, title: 'Call Us', details: ['+234 806 125 1833', '+234 915 274 3011'], color: 'text-og-green' },
+    { icon: Phone, title: 'Call Us', details: ['+2349079275596'], color: 'text-og-green' },
     { icon: Mail, title: 'Email Us', details: ['info@oggcltd.com'], color: 'text-og-gold' },
     { icon: Instagram, title: 'Instagram', details: ['@olivegemglobal_ng'], color: 'text-pink-500' },
     { icon: Linkedin, title: 'LinkedIn', details: ['Olive Gem Global Company Limited'], color: 'text-blue-600', link: 'https://www.linkedin.com/company/oggc' },

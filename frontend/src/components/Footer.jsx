@@ -18,7 +18,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Delivering unexploited value to the Oil and Gas and Agriculture industries through innovation and operational excellence.
+              Delivery unexploited value to the energy and commodity industry through innovation and operational excellence.
             </p>
             <div className="flex gap-4">
               <a href="https://www.linkedin.com/company/oggc" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-og-green transition-all"><Linkedin size={18}/></a>
