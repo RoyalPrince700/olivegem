@@ -41,13 +41,13 @@ const Hero = () => (
       <div className="max-w-5xl">
         <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-og-green/10 border border-og-green/20 text-og-light-green text-xs font-bold uppercase tracking-[0.2em] mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <span className="w-2 h-2 rounded-full bg-og-gold animate-pulse" />
-          Global Trading  Excellence
+          Global  Excellence in Trading
         </div>
 
         <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-black text-white leading-[0.85] tracking-tighter mb-8 animate-in fade-in slide-in-from-left-8 duration-1000">
           POWERING <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70">
-            POSSIBILITY
+            POSSIBILITIES
           </span>
         </h1>
 
