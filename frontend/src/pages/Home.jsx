@@ -25,7 +25,8 @@ const Hero = () => (
   <section className="relative h-screen flex items-center overflow-hidden bg-og-dark">
     {/* Background Image with Overlay */}
     <div className="absolute inset-0 z-0">
-      <div className="absolute inset-0 bg-gradient-to-b from-og-dark/70 via-og-dark/40 to-og-dark z-10" />
+      {/* Darker overlay on mobile for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-og-dark/85 via-og-dark/70 to-og-dark md:from-og-dark/70 md:via-og-dark/40 md:to-og-dark z-10" />
       <img 
         src={oilAndGasImg} 
         alt="Global Logistics and Procurement" 
@@ -37,41 +38,41 @@ const Hero = () => (
       <div className="absolute top-0 right-0 w-1/3 h-full bg-og-green/5 skew-x-12 transform origin-top-right -z-0" />
     </div>
 
-    <div className="container mx-auto px-6 md:px-12 relative z-20">
+    <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-20">
       <div className="max-w-5xl">
-        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-og-green/10 border border-og-green/20 text-og-light-green text-xs font-bold uppercase tracking-[0.2em] mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <span className="w-2 h-2 rounded-full bg-og-gold animate-pulse" />
+        <div className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-og-green/10 border border-og-green/20 text-og-light-green text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-og-gold animate-pulse" />
           Global  Excellence in Trading
         </div>
 
-        <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-black text-white leading-[0.85] tracking-tighter mb-8 animate-in fade-in slide-in-from-left-8 duration-1000">
+        <h1 className="text-[2.75rem] leading-[1] sm:text-5xl sm:leading-[0.95] md:text-8xl lg:text-[10rem] font-black text-white md:leading-[0.85] tracking-tighter mb-6 sm:mb-8 animate-in fade-in slide-in-from-left-8 duration-1000">
           POWERING <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70">
             POSSIBILITIES
           </span>
         </h1>
 
-        <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-16 mb-12 animate-in fade-in slide-in-from-left-12 duration-1000 delay-300">
+        <div className="flex flex-col md:flex-row md:items-center gap-6 sm:gap-8 md:gap-16 mb-10 sm:mb-12 animate-in fade-in slide-in-from-left-12 duration-1000 delay-300">
           <div className="h-24 w-1 bg-gradient-to-b from-og-gold to-transparent hidden md:block" />
-          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl font-light leading-relaxed">
+          <p className="text-base leading-[1.6] sm:text-lg sm:leading-relaxed md:text-2xl text-gray-200 md:text-gray-300 max-w-2xl font-light">
           A premier energy and commodity trading service powerhouse, connecting the Oil & Gas, Agriculture, and Mining sectors with global markets through <span className="text-white font-medium italic underline decoration-og-gold/50 decoration-2 underline-offset-4">unmatched integrity.</span>
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
+        <div className="flex flex-wrap gap-4 sm:gap-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
           <Link 
             to="/about" 
-            className="group relative overflow-hidden bg-og-green text-white px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-sm transition-all shadow-2xl hover:shadow-og-green/40 active:scale-95"
+            className="group relative overflow-hidden bg-og-green text-white px-6 py-3.5 sm:px-10 sm:py-5 rounded-sm font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm transition-all shadow-2xl hover:shadow-og-green/40 active:scale-95"
           >
-            <span className="relative z-10 flex items-center gap-3">
-              Explore Our Vision <ChevronRight size={20} className="group-hover:translate-x-2 transition-transform duration-300" />
+            <span className="relative z-10 flex items-center gap-2 sm:gap-3">
+              Explore Our Vision <ChevronRight size={18} className="sm:w-5 sm:h-5 group-hover:translate-x-2 transition-transform duration-300" />
             </span>
             <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </Link>
 
           <Link 
             to="/products" 
-            className="group px-10 py-5 rounded-sm font-bold uppercase tracking-widest text-sm border border-white/30 text-white hover:border-white hover:bg-white/5 transition-all active:scale-95"
+            className="group px-6 py-3.5 sm:px-10 sm:py-5 rounded-sm font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm border border-white/30 text-white hover:border-white hover:bg-white/5 transition-all active:scale-95"
           >
             Our Solutions
           </Link>
